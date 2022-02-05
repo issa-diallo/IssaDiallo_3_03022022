@@ -1,0 +1,23 @@
+{
+  "name": "p3_issa_diallo",
+  "version": "1.0.0",
+  "description": "My project OC 3 OhMyFood",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/issa-diallo/IssaDiallo_3_03022022.git"
+  },
+  "author": "Issa Diallo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/issa-diallo/IssaDiallo_3_03022022/issues"
+  },
+  "homepage": "https://github.com/issa-diallo/IssaDiallo_3_03022022#readme"
+}
