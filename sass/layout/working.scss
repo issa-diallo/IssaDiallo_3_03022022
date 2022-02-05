@@ -1,0 +1,29 @@
+/* Work */
+.work {
+  & h2 {
+    margin-top: 45px;
+    font-size: 30px;
+  }
+  & p {
+    font-size: 20px;
+  }
+
+  .gradientBtn {
+    height: 60px;
+    width: 65%;
+    color: white;
+    font-size: 18px;
+    font-style: bold;
+    padding: 20px, 10px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(var(--second), var(--primary));
+    transition: 2s;
+    margin-top: 20px;
+    box-shadow: 2px 0px 7px -3px var(--black);
+  }
+  .gradientBtn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
