@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+:root {
+  --primary: #9356dc;
+  --second: #ff79da;
+  --tertiary: #99e2d0;
+  --black: black;
+}
+
+.colorPrimary {
+  color: var(--primary);
+}
+
+.colorSecond {
+  color: var(--second);
+}
+
+.colorTertiary {
+  color: var(--tertiary);
+}
+
+.colorBlack {
+  color: var(--black);
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decorationNone {
+  text-decoration: none;
+}
+
+.textAlign {
+  text-align: center;
+}
+
+/* HEADER */
+.shadowBottom {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  position: relative;
+}
+
+/* MAIN */
+main .city {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+main .city i {
+  font-size: 20px;
+}
+
+.titleCity {
+  font-size: 18px;
+}
+
+/* Work */
+.work h2 {
+  margin-top: 45px;
+  font-size: 30px;
+}
+
+.work p {
+  font-size: 20px;
+}
+
+.gradientBtn {
+  height: 60px;
+  width: 65%;
+  color: white;
+  font-size: 18px;
+  font-style: bold;
+  padding: 20px, 10px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(var(--second), var(--primary));
+  transition: 2s;
+  margin-top: 20px;
+  box-shadow: 2px 0px 7px -3px var(--black);
+}
+
+.gradientBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
