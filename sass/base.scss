@@ -7,7 +7,11 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   margin: 0;
+}
+h2 {
+  font-size: 25px;
 }
 
 .shrikhand {
@@ -57,4 +61,7 @@ body {
 }
 .textAlign {
   text-align: center;
+}
+.paddingLeftRight {
+  padding: 0 15px;
 }

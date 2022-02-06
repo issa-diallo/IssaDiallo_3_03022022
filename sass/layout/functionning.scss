@@ -1,0 +1,63 @@
+@use "../utils/scale.scss";
+@use "../utils/shadow.scss";
+@use "../utils/variables.scss";
+
+.functionning {
+  counter-reset: steps;
+  margin-top: 50px;
+  & h2 {
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 1030px) {
+    & h2 {
+      text-align: center;
+    }
+  }
+  & ol {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$varSeizePixel;
+    list-style-type: none;
+    padding-right: 20px;
+    @media screen and (min-width: 1030px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px 55px;
+      flex-grow: 1;
+      gap: 2 * variables.$varSeizePixel;
+    }
+  }
+  & li {
+    position: relative;
+    &::before {
+      content: "" counter(steps);
+      counter-increment: steps;
+      background-color: var(--primary);
+      color: white;
+      height: variables.$varSeizePixel;
+      width: variables.$varSeizePixel;
+      padding: 8px;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 8px;
+      left: -10px;
+    }
+    background-color: #f6f6f6;
+    padding: 16px 52px;
+    transition: 1s;
+    border-radius: variables.$varSeizePixel;
+    @include shadow.shadow;
+
+    &:hover {
+      @include scale.zoom;
+    }
+    & i.fas {
+      color: grey;
+      margin-right: variables.$varSeizePixel;
+    }
+  }
+}

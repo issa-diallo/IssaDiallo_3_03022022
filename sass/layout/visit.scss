@@ -1,11 +1,14 @@
+@use "../utils/shadow.scss";
 /* Work */
-.work {
+.visit {
+  padding: 5px 25px;
+  background-color: #f3f3f3;
   & h2 {
     margin-top: 45px;
-    font-size: 30px;
+    font-size: 25px;
   }
   & p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .gradientBtn {
@@ -19,8 +22,8 @@
     border-radius: 25px;
     background-image: linear-gradient(var(--second), var(--primary));
     transition: 2s;
-    margin-top: 20px;
-    box-shadow: 2px 0px 7px -3px var(--black);
+    margin: 20px 0 50px;
+    @include shadow.shadow;
   }
   .gradientBtn:hover {
     transform: scale(1.05);

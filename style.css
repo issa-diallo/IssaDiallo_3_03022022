@@ -7,7 +7,12 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   margin: 0;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 .shrikhand {
@@ -70,6 +75,10 @@ body {
   text-align: center;
 }
 
+.paddingLeftRight {
+  padding: 0 15px;
+}
+
 /* HEADER */
 .shadowBottom {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -81,7 +90,7 @@ body {
 
 /* MAIN */
 .city {
-  background-color: #f3f3f3;
+  background-color: #e6e6e6;
   text-align: center;
   padding: 5px;
   gap: 10px;
@@ -95,14 +104,18 @@ body {
 }
 
 /* Work */
-.work h2 {
+.visit {
+  padding: 5px 25px;
+  background-color: #f3f3f3;
+}
+.visit h2 {
   margin-top: 45px;
-  font-size: 30px;
+  font-size: 25px;
 }
-.work p {
-  font-size: 20px;
+.visit p {
+  font-size: 14px;
 }
-.work .gradientBtn {
+.visit .gradientBtn {
   height: 60px;
   width: 65%;
   color: white;
@@ -113,12 +126,73 @@ body {
   border-radius: 25px;
   background-image: linear-gradient(var(--second), var(--primary));
   transition: 2s;
-  margin-top: 20px;
+  margin: 20px 0 50px;
   box-shadow: 2px 0px 7px -3px var(--black);
 }
-.work .gradientBtn:hover {
+.visit .gradientBtn:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+
+.functionning {
+  counter-reset: steps;
+  margin-top: 50px;
+}
+.functionning h2 {
+  padding-left: 20px;
+}
+@media screen and (min-width: 1030px) {
+  .functionning h2 {
+    text-align: center;
+  }
+}
+.functionning ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+  padding-right: 20px;
+}
+@media screen and (min-width: 1030px) {
+  .functionning ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 55px;
+    flex-grow: 1;
+    gap: 32px;
+  }
+}
+.functionning li {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 16px 52px;
+  transition: 1s;
+  border-radius: 16px;
+  box-shadow: 2px 0px 7px -3px var(--black);
+}
+.functionning li::before {
+  content: "" counter(steps);
+  counter-increment: steps;
+  background-color: var(--primary);
+  color: white;
+  height: 16px;
+  width: 16px;
+  padding: 8px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  left: -10px;
+}
+.functionning li:hover {
+  transform: scale(1.02);
+}
+.functionning li i.fas {
+  color: grey;
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
