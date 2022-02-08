@@ -14,6 +14,14 @@ h2 {
   font-size: 25px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h3,
+p {
+  margin: 0;
+}
 .shrikhand {
   font-family: "Shrikhand", cursive;
 }
@@ -38,9 +46,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-.decorationNone {
-  text-decoration: none;
-}
+
 .textAlign {
   text-align: center;
 }

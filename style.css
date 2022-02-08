@@ -15,6 +15,16 @@ h2 {
   font-size: 25px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
 .shrikhand {
   font-family: "Shrikhand", cursive;
 }
@@ -42,10 +52,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.decorationNone {
-  text-decoration: none;
 }
 
 .textAlign {
@@ -218,7 +224,7 @@ h2 {
 .menus .card_img {
   background-size: cover;
   height: 240px;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 .menus .card_img-1 {
   background-image: url("../../assets/restaurants/menu-1.jpg");
@@ -231,6 +237,23 @@ h2 {
 }
 .menus .card_img-4 {
   background-image: url("../../assets/restaurants/menu-4.jpg");
+}
+.menus .card_description {
+  position: relative;
+}
+.menus .card_description i {
+  font-size: 25px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-100%);
+}
+.menus .card_description h3 {
+  margin: 16px 5px 0;
+}
+.menus .card_description p {
+  padding-top: 8px;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
