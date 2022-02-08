@@ -1,5 +1,6 @@
 @use "../utils/shadow.scss";
 @use "../utils/colors.scss";
+@use "../utils/gradient.scss";
 /* Work */
 .visit {
   padding: 5px 25px;
@@ -21,7 +22,7 @@
     padding: 20px, 10px;
     border: none;
     border-radius: 25px;
-    background-image: linear-gradient(colors.$second, colors.$primary);
+    @include gradient.gradient;
     transition: 2s;
     margin: 20px 0 50px;
     @include shadow.shadow;

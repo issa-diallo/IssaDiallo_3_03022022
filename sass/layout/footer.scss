@@ -1,0 +1,13 @@
+@use "../utils/colors.scss";
+
+footer {
+  background-color: colors.$bgfooter;
+  padding: 0 20px 40px;
+  & h2 {
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  & i {
+    padding-right: 5px;
+  }
+}

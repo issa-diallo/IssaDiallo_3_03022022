@@ -195,6 +195,7 @@ p {
 .menus {
   background-color: #f6f6f6;
   padding: 15px 20px;
+  margin-bottom: 32px;
 }
 .menus .menus-cards {
   display: grid;
@@ -240,20 +241,45 @@ p {
 }
 .menus .card_description {
   position: relative;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
 }
 .menus .card_description i {
   font-size: 25px;
   position: absolute;
   right: 16px;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
 }
 .menus .card_description h3 {
-  margin: 16px 5px 0;
+  padding: 16px 12px 5px 12px;
 }
 .menus .card_description p {
-  padding-top: 8px;
-  margin-left: 5px;
+  margin-left: 12px;
+  padding-bottom: 25px;
+}
+.menus .card_description .fas {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.menus .card_description .fas:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #353535;
+  padding: 0 20px 40px;
+}
+footer h2 {
+  font-weight: 500;
+  padding-top: 20px;
+}
+footer i {
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
