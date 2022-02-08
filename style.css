@@ -244,19 +244,19 @@ p {
   background-color: white;
   border-radius: 0 0 16px 16px;
 }
-.menus .card_description i {
-  font-size: 25px;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .menus .card_description h3 {
   padding: 16px 12px 5px 12px;
 }
 .menus .card_description p {
   margin-left: 12px;
   padding-bottom: 25px;
+}
+.menus .card_description i {
+  font-size: 25px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .menus .card_description .fas {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -288,6 +288,31 @@ footer p {
 
 img {
   max-width: 100%;
+}
+
+main {
+  position: relative;
+}
+main i {
+  font-size: 25px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .fas {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+main .fas:hover {
+  opacity: 1;
+}
+main .titleHeart {
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

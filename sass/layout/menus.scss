@@ -42,13 +42,6 @@
       position: relative;
       background-color: white;
       border-radius: 0 0 16px 16px;
-      & i {
-        font-size: 25px;
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
       & h3 {
         padding: 16px 12px 5px 12px;
       }
@@ -56,17 +49,7 @@
         margin-left: 12px;
         padding-bottom: 25px;
       }
-      & .fas {
-        @include mixins.gradient;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: all 1s ease-in-out;
-        &:hover {
-          opacity: 1;
-        }
-      }
+      @include mixins.heart;
     }
   }
 }

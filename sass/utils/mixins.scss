@@ -11,3 +11,24 @@
 @mixin shadow {
   box-shadow: 2px 0px 7px -3px var(--black);
 }
+
+@mixin heart {
+  & i {
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .fas {
+    @include gradient;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
