@@ -1,8 +1,9 @@
 @use "../utils/shadow.scss";
+@use "../utils/colors.scss";
 /* Work */
 .visit {
   padding: 5px 25px;
-  background-color: #f3f3f3;
+  background-color: colors.$bglight;
   & h2 {
     margin-top: 45px;
     font-size: 25px;
@@ -20,7 +21,7 @@
     padding: 20px, 10px;
     border: none;
     border-radius: 25px;
-    background-image: linear-gradient(var(--second), var(--primary));
+    background-image: linear-gradient(colors.$second, colors.$primary);
     transition: 2s;
     margin: 20px 0 50px;
     @include shadow.shadow;

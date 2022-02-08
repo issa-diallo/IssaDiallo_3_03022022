@@ -1,6 +1,7 @@
 @use "../utils/scale.scss";
 @use "../utils/shadow.scss";
 @use "../utils/variables.scss";
+@use "../utils/colors.scss";
 
 .functionning {
   counter-reset: steps;
@@ -37,7 +38,7 @@
     &::before {
       content: "" counter(steps);
       counter-increment: steps;
-      background-color: var(--primary);
+      background-color: colors.$primary;
       color: white;
       height: variables.$varSeizePixel;
       width: variables.$varSeizePixel;
@@ -50,7 +51,7 @@
       bottom: 8px;
       left: -10px;
     }
-    background-color: #f6f6f6;
+    background-color: colors.$bglight;
     padding: 16px 52px;
     transition: 1s;
     border-radius: variables.$varSeizePixel;

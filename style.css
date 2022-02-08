@@ -19,29 +19,6 @@ h2 {
   font-family: "Shrikhand", cursive;
 }
 
-:root {
-  --primary: #9356dc;
-  --second: #ff79da;
-  --tertiary: #99e2d0;
-  --black: black;
-}
-
-.colorPrimary {
-  color: var(--primary);
-}
-
-.colorSecond {
-  color: var(--second);
-}
-
-.colorTertiary {
-  color: var(--tertiary);
-}
-
-.colorBlack {
-  color: var(--black);
-}
-
 .flexCenter {
   display: flex;
   justify-content: center;
@@ -88,7 +65,10 @@ h2 {
   position: relative;
 }
 
-/* MAIN */
+.headerTitle {
+  color: black;
+}
+
 .city {
   background-color: #e6e6e6;
   text-align: center;
@@ -101,12 +81,13 @@ h2 {
 
 .titleCity {
   font-size: 18px;
+  color: #4d4d4d;
 }
 
 /* Work */
 .visit {
   padding: 5px 25px;
-  background-color: #f3f3f3;
+  background-color: #f6f6f6;
 }
 .visit h2 {
   margin-top: 45px;
@@ -124,7 +105,7 @@ h2 {
   padding: 20px, 10px;
   border: none;
   border-radius: 25px;
-  background-image: linear-gradient(var(--second), var(--primary));
+  background-image: linear-gradient(#ff79da, #9356dc);
   transition: 2s;
   margin: 20px 0 50px;
   box-shadow: 2px 0px 7px -3px var(--black);
@@ -184,7 +165,7 @@ h2 {
 .functionning li::before {
   content: "" counter(steps);
   counter-increment: steps;
-  background-color: var(--primary);
+  background-color: #9356dc;
   color: white;
   height: 16px;
   width: 16px;
@@ -219,8 +200,20 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .card {
-  border: 1px solid black;
+.menus .new {
+  position: relative;
+}
+.menus .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 16px;
+  top: 16px;
 }
 .menus .card_img {
   background-size: cover;

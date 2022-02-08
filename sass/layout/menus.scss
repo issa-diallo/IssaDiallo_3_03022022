@@ -1,5 +1,6 @@
+@use "../utils/colors.scss";
 .menus {
-  background-color: #f6f6f6;
+  background-color: colors.$bglight;
   padding: 15px 20px;
   & .menus-cards {
     display: grid;
@@ -9,8 +10,22 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  .new {
+    position: relative;
+    &::before {
+      content: "Nouveau";
+      position: absolute;
+      height: 30px;
+      width: 80px;
+      background-color: colors.$tertiary;
+      color: darken(colors.$tertiary, 50%);
+      display: grid;
+      place-items: center;
+      right: 16px;
+      top: 16px;
+    }
+  }
   & .card {
-    border: 1px solid black;
     &_img {
       background-size: cover;
       height: 240px;

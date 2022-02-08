@@ -1,6 +1,6 @@
-/* MAIN */
+@use "../utils/colors.scss";
 .city {
-  background-color: #e6e6e6;
+  background-color: colors.$bgCity;
   text-align: center;
   padding: 5px;
   gap: 10px;
@@ -10,4 +10,5 @@
 }
 .titleCity {
   font-size: 18px;
+  color: colors.$titleCity;
 }

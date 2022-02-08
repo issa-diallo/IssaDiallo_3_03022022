@@ -17,24 +17,6 @@ h2 {
 .shrikhand {
   font-family: "Shrikhand", cursive;
 }
-:root {
-  --primary: #9356dc;
-  --second: #ff79da;
-  --tertiary: #99e2d0;
-  --black: black;
-}
-.colorPrimary {
-  color: var(--primary);
-}
-.colorSecond {
-  color: var(--second);
-}
-.colorTertiary {
-  color: var(--tertiary);
-}
-.colorBlack {
-  color: var(--black);
-}
 .flexCenter {
   display: flex;
   justify-content: center;
