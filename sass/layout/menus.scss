@@ -1,0 +1,21 @@
+.menus {
+  background-color: #f6f6f6;
+  padding: 15px 20px;
+  & .menus-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  & .card {
+    border: 1px solid black;
+    & .card_img {
+      background-image: url("../../assets/restaurants/la_palette_du_gout.jpg");
+      background-size: cover;
+      height: 240px;
+      border-radius: 16px;
+    }
+  }
+}

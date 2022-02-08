@@ -129,6 +129,11 @@ h2 {
   margin: 20px 0 50px;
   box-shadow: 2px 0px 7px -3px var(--black);
 }
+@media screen and (max-width: 425px) {
+  .visit .gradientBtn {
+    width: 95%;
+  }
+}
 .visit .gradientBtn:hover {
   transform: scale(1.05);
   opacity: 0.9;
@@ -136,7 +141,7 @@ h2 {
 
 .functionning {
   counter-reset: steps;
-  margin-top: 50px;
+  margin: 50px 0 50px;
 }
 .functionning h2 {
   padding-left: 20px;
@@ -171,6 +176,11 @@ h2 {
   border-radius: 16px;
   box-shadow: 2px 0px 7px -3px var(--black);
 }
+@media screen and (max-width: 320px) {
+  .functionning li {
+    padding: 16px 35px;
+  }
+}
 .functionning li::before {
   content: "" counter(steps);
   counter-increment: steps;
@@ -193,6 +203,30 @@ h2 {
 .functionning li i.fas {
   color: grey;
   margin-right: 16px;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding: 15px 20px;
+}
+.menus .menus-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+@media screen and (max-width: 767px) {
+  .menus .menus-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .card {
+  border: 1px solid black;
+}
+.menus .card .card_img {
+  background-image: url("../../assets/restaurants/la_palette_du_gout.jpg");
+  background-size: cover;
+  height: 240px;
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
