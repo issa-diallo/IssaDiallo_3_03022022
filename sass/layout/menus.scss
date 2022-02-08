@@ -1,5 +1,5 @@
 @use "../utils/colors.scss";
-@use "../utils/gradient.scss";
+@use "../utils/mixins.scss";
 .menus {
   background-color: colors.$bglight;
   padding: 15px 20px;
@@ -57,7 +57,7 @@
         padding-bottom: 25px;
       }
       & .fas {
-        @include gradient.gradient;
+        @include mixins.gradient;
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;

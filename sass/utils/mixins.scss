@@ -3,3 +3,11 @@
 @mixin gradient {
   background-image: linear-gradient(colors.$second, colors.$primary);
 }
+
+@mixin zoom {
+  transform: scale(1.02);
+}
+
+@mixin shadow {
+  box-shadow: 2px 0px 7px -3px var(--black);
+}
