@@ -222,11 +222,22 @@ h2 {
 .menus .card {
   border: 1px solid black;
 }
-.menus .card .card_img {
-  background-image: url("../../assets/restaurants/la_palette_du_gout.jpg");
+.menus .card_img {
   background-size: cover;
   height: 240px;
   border-radius: 16px;
+}
+.menus .card_img-1 {
+  background-image: url("../../assets/restaurants/menu-1.jpg");
+}
+.menus .card_img-2 {
+  background-image: url("../../assets/restaurants/menu-2.jpg");
+}
+.menus .card_img-3 {
+  background-image: url("../../assets/restaurants/menu-3.jpg");
+}
+.menus .card_img-4 {
+  background-image: url("../../assets/restaurants/menu-4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

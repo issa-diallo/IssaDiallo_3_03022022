@@ -11,11 +11,15 @@
   }
   & .card {
     border: 1px solid black;
-    & .card_img {
-      background-image: url("../../assets/restaurants/la_palette_du_gout.jpg");
+    &_img {
       background-size: cover;
       height: 240px;
       border-radius: 16px;
+    }
+    @for $i from 1 through 4 {
+      &_img-#{$i} {
+        background-image: url("../../assets/restaurants/menu-#{$i}.jpg");
+      }
     }
   }
 }
