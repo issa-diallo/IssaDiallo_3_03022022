@@ -2,12 +2,16 @@
 
 footer {
   background-color: colors.$bgfooter;
+  color: white;
   padding: 0 20px 40px;
   & h2 {
     font-weight: 500;
     padding-top: 20px;
   }
   & i {
-    padding-right: 5px;
+    padding-right: 10px;
+  }
+  & p {
+    padding-bottom: 5px;
   }
 }

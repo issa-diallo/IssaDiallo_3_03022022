@@ -272,6 +272,7 @@ p {
 
 footer {
   background-color: #353535;
+  color: white;
   padding: 0 20px 40px;
 }
 footer h2 {
@@ -279,7 +280,14 @@ footer h2 {
   padding-top: 20px;
 }
 footer i {
-  padding-right: 5px;
+  padding-right: 10px;
+}
+footer p {
+  padding-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
