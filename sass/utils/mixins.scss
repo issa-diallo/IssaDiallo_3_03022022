@@ -9,7 +9,7 @@
 }
 
 @mixin shadow {
-  box-shadow: 2px 0px 7px -3px var(--black);
+  box-shadow: 5px 7px 20px -8px #4d4d4d78;
 }
 
 @mixin heart {
@@ -30,5 +30,24 @@
     &:hover {
       opacity: 1;
     }
+  }
+}
+@mixin btn-button{
+  height: 60px;
+  width: 65%;
+  color: white;
+  font-size: 18px;
+  font-style: bold;
+  padding: 20px, 10px;
+  border: none;
+  border-radius: 25px;
+  @include gradient;
+  transition: 2s;
+  margin: 20px 0 50px;
+  @include shadow;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
   }
 }

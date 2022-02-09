@@ -13,24 +13,9 @@
   }
 
   .gradientBtn {
-    height: 60px;
-    width: 65%;
-    color: white;
-    font-size: 18px;
-    font-style: bold;
-    padding: 20px, 10px;
-    border: none;
-    border-radius: 25px;
-    @include mixins.gradient;
-    transition: 2s;
-    margin: 20px 0 50px;
-    @include mixins.shadow;
+    @include mixins.btn-button;
     @media screen and (max-width: 425px) {
       width: 95%;
     }
-  }
-  .gradientBtn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
   }
 }
