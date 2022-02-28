@@ -92,7 +92,7 @@ body{
       $numberItems: 4;
       @for $i from 1 through $numberItems {
         &:nth-child(#{$i}) {
-          animation-delay: 600ms * $i;
+          animation-delay: 300ms * $i;
         }
       }
       display: flex;
@@ -101,10 +101,12 @@ body{
       overflow: hidden;
       margin: 25px 15px;
       @include mixins.shadow;
-      animation: appear 4s;
+      animation: appear 3s;
       animation-fill-mode: both;
       & .description-item{
         padding: 10px;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
         & h4{
           padding-bottom: 6px;
         }

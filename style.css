@@ -295,6 +295,43 @@ footer p {
   padding-bottom: 5px;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  opacity: 0.9;
+  z-index: 1;
+  animation: deloader 200ms 6s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  animation: spin 3s infinite ease-in-out;
+  border-top: 5px solid #9356dc;
+  border-bottom: 5px solid #ff79da;
+  border-left: 5px solid #99e2d0;
+  border-right: 5px solid #99e2d0;
+  border-radius: 50%;
+}
+
+@keyframes deloader {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -411,23 +448,25 @@ body {
   overflow: hidden;
   margin: 25px 15px;
   box-shadow: 5px 7px 20px -8px #4d4d4d78;
-  animation: appear 4s;
+  animation: appear 3s;
   animation-fill-mode: both;
 }
 .menus-grid .menu .item:nth-child(1) {
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 .menus-grid .menu .item:nth-child(2) {
-  animation-delay: 1200ms;
+  animation-delay: 600ms;
 }
 .menus-grid .menu .item:nth-child(3) {
-  animation-delay: 1800ms;
+  animation-delay: 900ms;
 }
 .menus-grid .menu .item:nth-child(4) {
-  animation-delay: 2400ms;
+  animation-delay: 1200ms;
 }
 .menus-grid .menu .item .description-item {
   padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus-grid .menu .item .description-item h4 {
   padding-bottom: 6px;

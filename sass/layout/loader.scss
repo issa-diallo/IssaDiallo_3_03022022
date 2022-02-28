@@ -1,0 +1,39 @@
+@use "./../utils/mixins.scss";
+@use "./../utils/colors.scss";
+
+.loader{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    opacity: 0.9;
+    z-index: 1;
+    animation: deloader 200ms 6s forwards;
+    transform-origin: top;
+    &::after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        animation: spin 3s infinite ease-in-out;
+        border-top: 5px solid  colors.$primary;
+        border-bottom: 5px solid  colors.$second;
+        border-left: 5px solid  colors.$tertiary;
+        border-right: 5px solid  colors.$tertiary;
+        border-radius: 50%;
+    }
+}
+@keyframes deloader {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
