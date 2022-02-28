@@ -51,3 +51,12 @@
     opacity: 0.9;
   }
 }
+@mixin font-awesome {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
