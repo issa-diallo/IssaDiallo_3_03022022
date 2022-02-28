@@ -1,4 +1,5 @@
 @use "../utils/mixins.scss";
+@use "../utils/animations.scss";
 @use "../utils/colors.scss";
 
 body{
@@ -88,12 +89,20 @@ body{
       }
     }
     & .item {
+      $numberItems: 4;
+      @for $i from 1 through $numberItems {
+        &:nth-child(#{$i}) {
+          animation-delay: 600ms * $i;
+        }
+      }
       display: flex;
       border-radius: 16px;
       background-color: white;
       overflow: hidden;
       margin: 25px 15px;
-     @include mixins.shadow;
+      @include mixins.shadow;
+      animation: appear 4s;
+      animation-fill-mode: both;
       & .description-item{
         padding: 10px;
         & h4{
