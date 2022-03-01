@@ -70,7 +70,6 @@ h4 {
   padding-right: 4px;
 }
 
-/* HEADER */
 .shadowBottom {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
@@ -98,7 +97,6 @@ h4 {
   color: #4d4d4d;
 }
 
-/* Work */
 .visit {
   padding: 5px 25px;
   background-color: #f6f6f6;
@@ -541,4 +539,4 @@ body {
   opacity: 0.9;
 }
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=style.css.map */

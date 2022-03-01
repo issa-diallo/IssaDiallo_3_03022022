@@ -16,6 +16,7 @@
   & ol {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
     gap: variables.$varSeizePixel;
     list-style-type: none;
     padding-right: 20px;
