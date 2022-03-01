@@ -2,7 +2,7 @@
   "name": "p3_issa_diallo",
   "version": "1.0.0",
   "description": "My project OC 3 OhMyFood",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "sass": "^1.49.7"
