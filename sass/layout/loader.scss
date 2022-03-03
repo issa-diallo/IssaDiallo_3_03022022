@@ -1,6 +1,6 @@
 @use "./../utils/mixins.scss";
 @use "./../utils/colors.scss";
-
+// LOADER
 .loader{
     position: fixed;
     display: grid;
@@ -10,7 +10,7 @@
     inset: 0;
     opacity: 0.9;
     z-index: 1;
-    animation: deloader 200ms 6s forwards;
+    animation: deloader 200ms 3s forwards;
     transform-origin: top;
     &::after {
         content: "";

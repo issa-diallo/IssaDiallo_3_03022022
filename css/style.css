@@ -148,6 +148,7 @@ h4 {
 .functionning ol {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
   gap: 16px;
   list-style-type: none;
   padding-right: 20px;
@@ -302,7 +303,7 @@ footer p {
   inset: 0;
   opacity: 0.9;
   z-index: 1;
-  animation: deloader 200ms 6s forwards;
+  animation: deloader 200ms 3s forwards;
   transform-origin: top;
 }
 .loader::after {
@@ -330,16 +331,6 @@ footer p {
     transform: rotate(360deg);
   }
 }
-@keyframes appear {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 body {
   background-color: #f6f6f6;
 }
@@ -348,7 +339,7 @@ body {
   background-color: white;
 }
 
-.header::before {
+.arrow::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -363,7 +354,7 @@ body {
   font-size: 22px;
 }
 @media screen and (max-width: 320px) {
-  .header::before {
+  .arrow::before {
     left: 40px;
   }
 }
@@ -413,6 +404,16 @@ body {
   padding: 10px 20px;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .menus-grid {
   background-color: #f6f6f6;
   display: grid;

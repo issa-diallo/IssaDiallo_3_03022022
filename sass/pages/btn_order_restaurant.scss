@@ -1,0 +1,12 @@
+@use "../utils/mixins.scss";
+
+// BTN RESTAURANT
+.order{
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: #f6f6f6;
+    & .gradientBtn{
+      @include mixins.btn-button;
+    }
+  }

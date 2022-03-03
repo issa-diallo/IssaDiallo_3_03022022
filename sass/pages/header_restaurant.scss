@@ -1,0 +1,16 @@
+@use "../utils/mixins.scss";
+// HEADER RESTAURANT
+.header{
+    background-color: white;
+  }
+  .arrow::before{
+    @include mixins.font-awesome;
+    content: "\f060";
+    position: absolute;
+    top: 28px;
+    left: 60px;
+    font-size: 22px;
+    @media screen and (max-width: 320px){
+      left: 40px;
+    }
+  }

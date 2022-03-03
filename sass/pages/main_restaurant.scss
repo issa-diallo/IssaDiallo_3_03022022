@@ -1,0 +1,38 @@
+@use "../utils/colors.scss";
+@use "../utils/mixins.scss";
+
+// MAIN RESTAURANT
+.main {
+    position: relative;
+    background-color: colors.$bglight;
+    border-radius: 32px 32px 0 0;
+    margin-top: -120px;
+    & h2 {
+      font-size: 20px;
+    }
+    & .titleHeart .far, .titleHeart .fas {
+      font-size: 25px;
+      position: absolute;
+      right: 30px;
+      top: 4%;
+      transform: translateY(-50%);
+      @media screen and (min-width: 1023px) {
+        top: 45px;
+        right: 40px;
+      }
+    }
+    .titleHeart .fas {
+      @include mixins.gradient;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    & .titleHeart {
+      padding: 10px 20px;
+    }
+  }
