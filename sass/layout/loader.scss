@@ -10,13 +10,13 @@
     inset: 0;
     opacity: 0.9;
     z-index: 1;
-    animation: deloader 200ms 3s forwards;
+    animation: deloader 200ms 1s forwards;
     transform-origin: top;
     &::after {
         content: "";
         height: 100px;
         width: 100px;
-        animation: spin 3s infinite ease-in-out;
+        animation: spin 1s infinite ease-in-out;
         border-top: 5px solid  colors.$primary;
         border-bottom: 5px solid  colors.$second;
         border-left: 5px solid  colors.$tertiary;

@@ -19,6 +19,7 @@
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
+    color: black;
   }
   .fas {
     @include gradient;
@@ -37,8 +38,8 @@
   width: 65%;
   color: white;
   font-size: 18px;
-  font-style: bold;
-  padding: 20px, 10px;
+  // font-style: bold;
+  padding: 20px 10px;
   border: none;
   border-radius: 25px;
   @include gradient;

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-/* GENERAL */
 * {
   box-sizing: border-box;
 }
@@ -13,11 +12,6 @@ body {
 
 h2 {
   font-size: 25px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 h3,
@@ -76,10 +70,11 @@ h4 {
 
 .header {
   position: relative;
+  text-decoration: none;
 }
-
-.headerTitle {
+.header a {
   color: black;
+  text-decoration: none !important;
 }
 
 .city {
@@ -113,8 +108,7 @@ h4 {
   width: 65%;
   color: white;
   font-size: 18px;
-  font-style: bold;
-  padding: 20px, 10px;
+  padding: 20px 10px;
   border: none;
   border-radius: 25px;
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -217,6 +211,8 @@ h4 {
 }
 .menus .new {
   position: relative;
+  text-decoration: none;
+  color: black;
 }
 .menus .new::before {
   content: "Nouveau";
@@ -230,27 +226,33 @@ h4 {
   right: 16px;
   top: 16px;
 }
+.menus .card {
+  text-decoration: none;
+  color: black;
+}
 .menus .card_img {
   background-size: cover;
   height: 240px;
   border-radius: 16px 16px 0 0;
 }
 .menus .card_img-1 {
-  background-image: url("../../assets/restaurants/menu-1.jpg");
+  background-image: url("../assets/restaurants/menu-1.jpg");
 }
 .menus .card_img-2 {
-  background-image: url("../../assets/restaurants/menu-2.jpg");
+  background-image: url("../assets/restaurants/menu-2.jpg");
 }
 .menus .card_img-3 {
-  background-image: url("../../assets/restaurants/menu-3.jpg");
+  background-image: url("../assets/restaurants/menu-3.jpg");
 }
 .menus .card_img-4 {
-  background-image: url("../../assets/restaurants/menu-4.jpg");
+  background-image: url("../assets/restaurants/menu-4.jpg");
 }
 .menus .card_description {
   position: relative;
   background-color: white;
   border-radius: 0 0 16px 16px;
+  text-decoration: none;
+  color: black;
 }
 .menus .card_description h3 {
   padding: 16px 12px 5px 12px;
@@ -265,6 +267,7 @@ h4 {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  color: black;
 }
 .menus .card_description .fas {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -293,6 +296,10 @@ footer i {
 footer p {
   padding-bottom: 5px;
 }
+footer p a {
+  text-decoration: none;
+  color: white;
+}
 
 .loader {
   position: fixed;
@@ -303,14 +310,14 @@ footer p {
   inset: 0;
   opacity: 0.9;
   z-index: 1;
-  animation: deloader 200ms 3s forwards;
+  animation: deloader 200ms 1s forwards;
   transform-origin: top;
 }
 .loader::after {
   content: "";
   height: 100px;
   width: 100px;
-  animation: spin 3s infinite ease-in-out;
+  animation: spin 1s infinite ease-in-out;
   border-top: 5px solid #9356dc;
   border-bottom: 5px solid #ff79da;
   border-left: 5px solid #99e2d0;
@@ -335,7 +342,14 @@ body {
   background-color: #f6f6f6;
 }
 
-.header {
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  text-decoration: none;
+}
+header a .header {
   background-color: white;
 }
 
@@ -352,6 +366,8 @@ body {
   top: 28px;
   left: 60px;
   font-size: 22px;
+  color: black;
+  text-decoration: none;
 }
 @media screen and (max-width: 320px) {
   .arrow::before {
@@ -382,11 +398,13 @@ body {
   right: 30px;
   top: 4%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 @media screen and (min-width: 1023px) {
   .main .titleHeart .far, .main .titleHeart .fas {
     top: 45px;
     right: 40px;
+    cursor: pointer;
   }
 }
 .main .titleHeart .fas {
@@ -412,6 +430,14 @@ body {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+@keyframes quater-spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 .menus-grid {
@@ -445,7 +471,7 @@ body {
   border-radius: 16px;
   background-color: white;
   overflow: hidden;
-  margin: 25px 15px;
+  margin: 25px -5px;
   box-shadow: 5px 7px 20px -8px #4d4d4d78;
   animation: appear 3s;
   animation-fill-mode: both;
@@ -504,12 +530,15 @@ body {
 .menus-grid .menu .item:hover .check {
   margin-right: 0px;
 }
+.menus-grid .menu .item:hover .check i {
+  animation: quater-spin 1s ease-in-out;
+}
 .menus-grid .menu .item i {
   display: grid;
   place-items: center;
   background: white;
   border-radius: 50%;
-  aspect-ratio: 1;
+  height: 25px;
   width: 25px;
   color: #99e2d0;
 }
@@ -525,8 +554,7 @@ body {
   width: 65%;
   color: white;
   font-size: 18px;
-  font-style: bold;
-  padding: 20px, 10px;
+  padding: 20px 10px;
   border: none;
   border-radius: 25px;
   background-image: linear-gradient(#ff79da, #9356dc);

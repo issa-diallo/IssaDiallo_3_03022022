@@ -16,9 +16,11 @@
       right: 30px;
       top: 4%;
       transform: translateY(-50%);
+      cursor: pointer;
       @media screen and (min-width: 1023px) {
         top: 45px;
         right: 40px;
+        cursor: pointer;
       }
     }
     .titleHeart .fas {

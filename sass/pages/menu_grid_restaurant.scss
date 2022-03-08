@@ -2,6 +2,15 @@
 @use "../utils/animations.scss";
 @use "../utils/colors.scss";
 
+@keyframes quater-spin {
+  0%{
+      transform: rotate(-270deg);
+  }
+  100%{
+      transform: rotate(0);
+  }
+}
+
 // SECTION MENU GRID RESTAURANT
 .menus-grid {
     background-color: colors.$bglight;
@@ -38,7 +47,7 @@
         border-radius: 16px;
         background-color: white;
         overflow: hidden;
-        margin: 25px 15px;
+        margin: 25px -5px;
         @include mixins.shadow;
         animation: appear 3s;
         animation-fill-mode: both;
@@ -84,14 +93,19 @@
         }
         &:hover .check{
           margin-right: 0px;
+          & i{
+            
+            animation: quater-spin 1s ease-in-out;
+          }
         }
          & i{
+          $size: 25px;
           display: grid;
           place-items: center;
           background: white;
           border-radius: 50%;
-          aspect-ratio: 1;
-          width: 25px;
+          height: $size;
+          width: $size;
           color: colors.$tertiary;
          }
       }
